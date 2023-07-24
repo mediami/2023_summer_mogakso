@@ -1,0 +1,14 @@
+session_name: mymy4
+windows:
+  - window_name: tutorial
+    shell_command_before:
+      - source ~/.bashrc
+    panes:
+      - shell_command:
+        - python3 multi_train.py cifar100 -m resnet101 -c 8 --use-wandb
+#  - window_name: tutorial2
+#    shell_command_before:
+#      - source ~/.bashrc
+#    panes:
+#      - shell_command:
+#        - python3 multi_train.py cifar100 -m seresnet101 -c 9 --use-wandb
